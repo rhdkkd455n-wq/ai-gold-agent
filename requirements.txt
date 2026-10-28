@@ -3,5 +3,5 @@ mplfinance
 pandas
 numpy
 matplotlib
-openai
+google-generativeai
 requests

@@ -88,7 +88,8 @@ QUY TẮC:
 def send_telegram(photo_path, text):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
     with open(photo_path, 'rb') as photo:
-        requests.post(url, data={'chat_id': TELEGRAM_CHAT_ID, 'caption': text}, files={'photo': photo})
+        res = requests.post(url, data={'chat_id': TELEGRAM_CHAT_ID, 'caption': text}, files={'photo': photo})
+        print(f"👉 Kết quả Telegram trả về: {res.status_code} - {res.text}")
 
 def main():
     print("Đang quét dữ liệu nến Vàng...")

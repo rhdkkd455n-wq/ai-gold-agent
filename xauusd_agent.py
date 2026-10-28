@@ -119,9 +119,9 @@ def main():
     )
     
     analysis = response.choices[0].message.content.strip()
-    
     if "SKIP" in analysis or len(analysis) < 15:
-        print("Không có kèo đạt chuẩn. Đứng ngoài.")
+        print("Không có kèo đạt chuẩn. Gửi báo cáo theo dõi...")
+        send_telegram(chart_file, "🤖 [BÁO CÁO AI AGENT]\nĐã quét xong nến Vàng H1!\nHiện tại chưa có setup A+ đạt chuẩn (Thị trường đang đi ngang). Bot tiếp tục canh me 24/5!")
     else:
         print("Tìm thấy kèo A+! Đang gửi Telegram...")
         send_telegram(chart_file, analysis)

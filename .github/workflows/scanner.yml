@@ -2,9 +2,11 @@ name: XAUUSD AI Auto Scanner
 
 on:
   schedule:
-    # Tự động chạy ngầm mỗi 1 tiếng (vào phút thứ 2), từ Thứ 2 đến Thứ 6
     - cron: '2 * * * 1-5'
-  workflow_dispatch: # Cho phép bấm nút quét tay bất cứ lúc nào
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Cấp quyền để bot tự lưu trạng thái theo dõi TP1, TP2
 
 jobs:
   scan-market:
@@ -21,9 +23,15 @@ jobs:
       - name: Cài đặt thư viện
         run: pip install -r requirements.txt
 
-      - name: Chạy Groq AI quét thị trường
+      - name: Chạy Bot theo dõi Vàng & TP Tracker
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python xauusd_agent.py
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          python xauusd_agent.py
+          git add trade_state.json || true
+          git commit -m "Cap nhat trang thai lenh" || true
+          git push || true

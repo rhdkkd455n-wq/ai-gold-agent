@@ -1,0 +1,11 @@
+{
+    "action": "SELL",
+    "entry": 4031.9,
+    "sl": 4052.2,
+    "tp1": 4001.5,
+    "tp2": 3971.0,
+    "sl_pips": 203,
+    "tp1_pips": 304,
+    "tp2_pips": 609,
+    "tp1_hit": false
+}

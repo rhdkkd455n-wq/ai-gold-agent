@@ -21,7 +21,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 if TELEGRAM_BOT_TOKEN.startswith("bot"):
     TELEGRAM_BOT_TOKEN = TELEGRAM_BOT_TOKEN[3:]
 
-TICKER = "GC=F"
+TICKER = "XAUUSD=X"
 STATE_FILE = "trade_state.json"
 client = Groq(api_key=GROQ_API_KEY)
 VN_TZ = timezone(timedelta(hours=7))

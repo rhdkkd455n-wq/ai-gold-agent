@@ -2,11 +2,12 @@ name: XAUUSD AI Auto Scanner
 
 on:
   schedule:
-    - cron: '2 * * * 1-5'
+    # Chạy vào phút thứ 1 sau mỗi giờ đóng nến (từ Thứ 2 đến Thứ 6)
+    - cron: '1 * * * 1-5'
   workflow_dispatch:
 
 permissions:
-  contents: write  # Cấp quyền để bot tự lưu trạng thái theo dõi TP1, TP2
+  contents: write
 
 jobs:
   scan-market:
@@ -33,5 +34,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           python xauusd_agent.py
           git add trade_state.json || true
-          git commit -m "Cap nhat trang thai lenh" || true
+          git commit -m "Cap nhat trang thai lenh theo ID" || true
           git push || true

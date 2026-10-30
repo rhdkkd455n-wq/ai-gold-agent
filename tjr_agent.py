@@ -14,7 +14,7 @@ from groq import Groq
 
 # 1. KHỞI TẠO KEY BẢO MẬT
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").strip()
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+TELEGRAM_BOT_TOKEN = os.environ.get("TJR_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 TWELVE_DATA_API_KEY = os.environ.get("TWELVE_DATA_API_KEY", "").strip()
 

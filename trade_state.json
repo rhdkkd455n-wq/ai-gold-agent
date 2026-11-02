@@ -1,13 +1,13 @@
 {
     "active_trades": [
         {
-            "id": "#H1_0311_04H",
+            "id": "#H1_0311_08H",
             "timeframe": "H1",
-            "action": "SELL",
-            "entry": 3898.98,
-            "sl": 3907.48,
-            "tp1": 3886.23,
-            "tp2": 3877.73,
+            "action": "BUY",
+            "entry": 3945.83,
+            "sl": 3937.33,
+            "tp1": 3958.58,
+            "tp2": 3967.08,
             "sl_pips": 85,
             "tp1_pips": 127,
             "tp2_pips": 212,

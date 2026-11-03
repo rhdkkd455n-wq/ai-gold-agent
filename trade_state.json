@@ -5,13 +5,13 @@
             "timeframe": "H1",
             "action": "SELL",
             "entry": 3912.27,
-            "sl": 3920.77,
+            "sl": 3912.27,
             "tp1": 3899.52,
             "tp2": 3891.02,
             "sl_pips": 85,
             "tp1_pips": 127,
             "tp2_pips": 212,
-            "tp1_hit": false
+            "tp1_hit": true
         },
         {
             "id": "#H1_0411_02H",

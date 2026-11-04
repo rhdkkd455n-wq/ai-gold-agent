@@ -12,32 +12,6 @@
             "tp1_pips": 127,
             "tp2_pips": 212,
             "tp1_hit": true
-        },
-        {
-            "id": "#H1_0411_06H",
-            "timeframe": "H1",
-            "action": "BUY",
-            "entry": 3930.38,
-            "sl": 3921.88,
-            "tp1": 3943.13,
-            "tp2": 3951.63,
-            "sl_pips": 85,
-            "tp1_pips": 127,
-            "tp2_pips": 212,
-            "tp1_hit": false
-        },
-        {
-            "id": "#H1_0411_07H",
-            "timeframe": "H1",
-            "action": "BUY",
-            "entry": 3936.75,
-            "sl": 3928.25,
-            "tp1": 3949.5,
-            "tp2": 3958.0,
-            "sl_pips": 85,
-            "tp1_pips": 127,
-            "tp2_pips": 212,
-            "tp1_hit": false
         }
     ],
     "calendar_sent_date": ""

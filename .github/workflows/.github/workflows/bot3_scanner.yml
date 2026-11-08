@@ -1,0 +1,39 @@
+name: Bot 3 Volume Profile Auto
+
+on:
+  schedule:
+    # Chạy vào phút thứ 2 sau mỗi giờ đóng nến (từ Thứ 2 đến Thứ 6)
+    - cron: '2 * * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Bot 3 Volume Profile & Tracker
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BOT3_TELEGRAM_TOKEN: ${{ secrets.BOT3_TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          python bot3_agent.py
+          git add bot3_state.json || true
+          git commit -m "Cap nhat trang thai lenh Bot 3" || true
+          git push || true

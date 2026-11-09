@@ -12,6 +12,19 @@
             "tp1_pips": 141,
             "tp2_pips": 141,
             "tp1_hit": false
+        },
+        {
+            "id": "#OF_H1_0911_17H",
+            "action": "BUY",
+            "timeframe": "H1",
+            "entry": 4097.44,
+            "sl": 4088.94,
+            "tp1": 4109.35,
+            "tp2": 4109.35,
+            "sl_pips": 85,
+            "tp1_pips": 119,
+            "tp2_pips": 119,
+            "tp1_hit": false
         }
     ]
 }

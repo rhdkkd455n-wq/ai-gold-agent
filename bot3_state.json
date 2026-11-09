@@ -1,16 +1,16 @@
 {
     "active_trades": [
         {
-            "id": "#OF_H1_0911_09H",
-            "action": "BUY",
+            "id": "#OF_H1_0911_10H",
+            "action": "SELL",
             "timeframe": "H1",
-            "entry": 4122.88,
-            "sl": 4113.38,
-            "tp1": 4076.19,
-            "tp2": 4076.19,
-            "sl_pips": 95,
-            "tp1_pips": 467,
-            "tp2_pips": 467,
+            "entry": 4120.1,
+            "sl": 4128.6,
+            "tp1": 4066.37,
+            "tp2": 4053.17,
+            "sl_pips": 85,
+            "tp1_pips": 537,
+            "tp2_pips": 669,
             "tp1_hit": false
         }
     ]

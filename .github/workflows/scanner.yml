@@ -34,7 +34,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           python xauusd_agent.py
           git add trade_state.json || true
-          git commit -m "Cap nhat trang thai lenh" || true
+          git commit -m "Cap nhat Bot 1" || true
           git push || true
 
       - name: Chạy Bot 2 (M15 TJR Sniper)
@@ -44,3 +44,15 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
         run: python tjr_agent.py
+
+      - name: Chạy Bot 3 (Volume Profile & Order Flow)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BOT3_TELEGRAM_TOKEN: ${{ secrets.BOT3_TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: |
+          python bot3_agent.py
+          git add bot3_state.json || true
+          git commit -m "Cap nhat Bot 3" || true
+          git push || true

@@ -14,55 +14,16 @@
             "tp1_hit": false
         },
         {
-            "id": "#OF_H1_1011_14H",
+            "id": "#OF_H1_1011_17H",
             "action": "SELL",
             "timeframe": "H1",
-            "entry": 4119.56,
-            "sl": 4128.06,
-            "tp1": 4097.78,
-            "tp2": 4097.78,
+            "entry": 4087.89,
+            "sl": 4096.39,
+            "tp1": 4095.01,
+            "tp2": 4095.01,
             "sl_pips": 85,
-            "tp1_pips": 218,
-            "tp2_pips": 218,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1011_15H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 4113.65,
-            "sl": 4122.15,
-            "tp1": 4097.78,
-            "tp2": 4097.78,
-            "sl_pips": 85,
-            "tp1_pips": 159,
-            "tp2_pips": 159,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1011_16H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 4114.12,
-            "sl": 4122.62,
-            "tp1": 4097.78,
-            "tp2": 4097.78,
-            "sl_pips": 85,
-            "tp1_pips": 163,
-            "tp2_pips": 163,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1011_16H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 4114.12,
-            "sl": 4122.62,
-            "tp1": 4097.78,
-            "tp2": 4097.78,
-            "sl_pips": 85,
-            "tp1_pips": 163,
-            "tp2_pips": 163,
+            "tp1_pips": 71,
+            "tp2_pips": 71,
             "tp1_hit": false
         }
     ]

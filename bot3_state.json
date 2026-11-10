@@ -51,6 +51,19 @@
             "tp1_pips": 163,
             "tp2_pips": 163,
             "tp1_hit": false
+        },
+        {
+            "id": "#OF_H1_1011_16H",
+            "action": "SELL",
+            "timeframe": "H1",
+            "entry": 4114.12,
+            "sl": 4122.62,
+            "tp1": 4097.78,
+            "tp2": 4097.78,
+            "sl_pips": 85,
+            "tp1_pips": 163,
+            "tp2_pips": 163,
+            "tp1_hit": false
         }
     ]
 }

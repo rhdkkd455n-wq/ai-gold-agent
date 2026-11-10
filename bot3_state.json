@@ -14,19 +14,6 @@
             "tp1_hit": false
         },
         {
-            "id": "#OF_H1_1011_13H",
-            "action": "BUY",
-            "timeframe": "H1",
-            "entry": 4122.75,
-            "sl": 4114.25,
-            "tp1": 4139.32,
-            "tp2": 4139.32,
-            "sl_pips": 85,
-            "tp1_pips": 166,
-            "tp2_pips": 166,
-            "tp1_hit": false
-        },
-        {
             "id": "#OF_H1_1011_14H",
             "action": "SELL",
             "timeframe": "H1",
@@ -37,6 +24,19 @@
             "sl_pips": 85,
             "tp1_pips": 218,
             "tp2_pips": 218,
+            "tp1_hit": false
+        },
+        {
+            "id": "#OF_H1_1011_15H",
+            "action": "SELL",
+            "timeframe": "H1",
+            "entry": 4113.65,
+            "sl": 4122.15,
+            "tp1": 4097.78,
+            "tp2": 4097.78,
+            "sl_pips": 85,
+            "tp1_pips": 159,
+            "tp2_pips": 159,
             "tp1_hit": false
         }
     ]

@@ -14,16 +14,16 @@
             "tp1_hit": false
         },
         {
-            "id": "#OF_H1_1011_17H",
+            "id": "#OF_H1_1011_18H",
             "action": "SELL",
             "timeframe": "H1",
-            "entry": 4087.89,
-            "sl": 4096.39,
+            "entry": 4075.81,
+            "sl": 4084.31,
             "tp1": 4095.01,
             "tp2": 4095.01,
             "sl_pips": 85,
-            "tp1_pips": 71,
-            "tp2_pips": 71,
+            "tp1_pips": 192,
+            "tp2_pips": 192,
             "tp1_hit": false
         }
     ]

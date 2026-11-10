@@ -1,0 +1,59 @@
+name: XAUUSD AI Auto Scanner
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan-market:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Thiết lập môi trường Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Cài đặt thư viện
+        run: pip install -r requirements.txt
+
+      - name: Chạy Bot 1 (TraderViet H1/H4)
+        continue-on-error: true
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          python xauusd_agent.py
+          git add trade_state.json || true
+          git commit -m "Cap nhat Bot 1" || true
+          git push || true
+
+      - name: Chạy Bot 2 (TJR M15 Sniper)
+        continue-on-error: true
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TJR_BOT_TOKEN: ${{ secrets.TJR_BOT_TOKEN || secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: python tjr_agent.py
+
+      - name: Chạy Bot 3 (Volume Profile & Order Flow)
+        continue-on-error: true
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BOT3_TELEGRAM_TOKEN: ${{ secrets.BOT3_TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: |
+          python bot3_agent.py
+          git add bot3_state.json || true
+          git commit -m "Cap nhat Bot 3" || true
+          git push || true

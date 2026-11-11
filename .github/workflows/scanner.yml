@@ -23,6 +23,7 @@ jobs:
       - name: Cài đặt thư viện
         run: pip install -r requirements.txt
 
+      # BƯỚC 1: CHẠY BOT 1 TRƯỚC
       - name: Chạy Bot 1 (TraderViet H1/H4)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -37,9 +38,11 @@ jobs:
           git commit -m "Cap nhat Bot 1" || true
           git push || true
 
+      # NGHỈ 5 GIÂY ĐỂ XẢ BỘ ĐỆM MẠNG
       - name: Nghỉ đệm 5 giây
         run: sleep 5
 
+      # BƯỚC 2: CHẠY TIẾP BOT 3
       - name: Chạy Bot 3 (Volume Profile & Order Flow)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

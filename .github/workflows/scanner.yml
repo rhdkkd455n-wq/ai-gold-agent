@@ -1,6 +1,8 @@
 name: XAUUSD AI Auto Scanner
 
 on:
+  schedule:
+    - cron: '2 * * * 1-5'
   workflow_dispatch:
 
 permissions:
@@ -13,7 +15,7 @@ jobs:
       - name: Lấy mã nguồn
         uses: actions/checkout@v4
 
-      - name: Thiết lập môi trường Python
+      - name: Thiết lập Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
@@ -21,8 +23,8 @@ jobs:
       - name: Cài đặt thư viện
         run: pip install -r requirements.txt
 
-      - name: Chạy Bot 1 (TraderViet H1/H4)
-        continue-on-error: true
+      # BƯỚC 1: CHẠY HOÀN TẤT BOT 1 TRƯỚC
+      - name: Chạy Bot 1 (H1/H4 TraderViet & Vĩ mô)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -36,17 +38,12 @@ jobs:
           git commit -m "Cap nhat Bot 1" || true
           git push || true
 
-      - name: Chạy Bot 2 (M15 TJR Sniper)
-        continue-on-error: true
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          TJR_BOT_TOKEN: ${{ secrets.TJR_BOT_TOKEN || secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
-        run: python tjr_agent.py
+      # NGHỈ 5 GIÂY ĐỂ XẢ BỘ ĐỆM MẠNG VÀ TOKEN
+      - name: Nghỉ đệm 5 giây
+        run: sleep 5
 
+      # BƯỚC 2: SAU KHI BOT 1 XONG MỚI CHẠY TIẾP BOT 3
       - name: Chạy Bot 3 (Volume Profile & Order Flow)
-        continue-on-error: true
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           BOT3_TELEGRAM_TOKEN: ${{ secrets.BOT3_TELEGRAM_TOKEN }}

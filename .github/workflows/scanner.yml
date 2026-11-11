@@ -23,8 +23,7 @@ jobs:
       - name: Cài đặt thư viện
         run: pip install -r requirements.txt
 
-      # BƯỚC 1: CHẠY HOÀN TẤT BOT 1 TRƯỚC
-      - name: Chạy Bot 1 (H1/H4 TraderViet & Vĩ mô)
+      - name: Chạy Bot 1 (TraderViet H1/H4)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -38,11 +37,9 @@ jobs:
           git commit -m "Cap nhat Bot 1" || true
           git push || true
 
-      # NGHỈ 5 GIÂY ĐỂ XẢ BỘ ĐỆM MẠNG VÀ TOKEN
       - name: Nghỉ đệm 5 giây
         run: sleep 5
 
-      # BƯỚC 2: SAU KHI BOT 1 XONG MỚI CHẠY TIẾP BOT 3
       - name: Chạy Bot 3 (Volume Profile & Order Flow)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

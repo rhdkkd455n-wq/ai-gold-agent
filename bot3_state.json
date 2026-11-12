@@ -1,5 +1,19 @@
 {
-    "active_trades": [],
+    "active_trades": [
+        {
+            "id": "#OF_H1_1211_18H",
+            "action": "BUY",
+            "timeframe": "H1",
+            "entry": 3953.76,
+            "sl": 3934.8,
+            "tp1": 3991.68,
+            "tp2": 4010.64,
+            "sl_pips": 189,
+            "tp1_pips": 379,
+            "tp2_pips": 568,
+            "tp1_hit": false
+        }
+    ],
     "closed_ids": [
         "#OF_H1_1211_10H",
         "#OF_H1_1211_15H",

@@ -90,6 +90,32 @@
             "tp1_pips": 357,
             "tp2_pips": 536,
             "tp1_hit": false
+        },
+        {
+            "id": "#OF_H1_1311_20H",
+            "action": "SELL",
+            "timeframe": "H1",
+            "entry": 3888.57,
+            "sl": 3906.45,
+            "tp1": 3852.81,
+            "tp2": 3834.93,
+            "sl_pips": 178,
+            "tp1_pips": 357,
+            "tp2_pips": 536,
+            "tp1_hit": false
+        },
+        {
+            "id": "#OF_H1_1311_20H",
+            "action": "SELL",
+            "timeframe": "H1",
+            "entry": 3888.57,
+            "sl": 3906.45,
+            "tp1": 3852.81,
+            "tp2": 3834.93,
+            "sl_pips": 178,
+            "tp1_pips": 357,
+            "tp2_pips": 536,
+            "tp1_hit": false
         }
     ],
     "closed_ids": [

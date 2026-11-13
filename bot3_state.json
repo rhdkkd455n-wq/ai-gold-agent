@@ -129,6 +129,19 @@
             "tp1_pips": 374,
             "tp2_pips": 561,
             "tp1_hit": false
+        },
+        {
+            "id": "#OF_H1_1411_03H",
+            "action": "SELL",
+            "timeframe": "H1",
+            "entry": 3875.68,
+            "sl": 3894.4,
+            "tp1": 3838.24,
+            "tp2": 3819.52,
+            "sl_pips": 187,
+            "tp1_pips": 374,
+            "tp2_pips": 561,
+            "tp1_hit": false
         }
     ],
     "closed_ids": [

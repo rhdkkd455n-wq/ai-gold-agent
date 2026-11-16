@@ -1,5 +1,9 @@
 {
     "active_trades": [],
     "calendar_sent_date": "13/11/2026",
-    "closed_ids": []
+    "closed_ids": [],
+    "closed_trades": [],
+    "notified_events": [],
+    "last_weekly_report": "",
+    "last_processed_candle": "#SWING_H4_1611_22H"
 }

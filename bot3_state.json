@@ -117,5 +117,7 @@
             "closed_at": "16/11 22:01"
         }
     ],
-    "last_weekly_report": ""
+    "last_weekly_report": "",
+    "notified_events": [],
+    "last_processed_candle": "#DAY_H1_1611_22H"
 }

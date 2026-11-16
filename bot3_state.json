@@ -53,19 +53,6 @@
             "tp1_hit": false
         },
         {
-            "id": "#OF_H1_1311_23H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3873.85,
-            "sl": 3893.89,
-            "tp1": 3833.77,
-            "tp2": 3813.73,
-            "sl_pips": 200,
-            "tp1_pips": 400,
-            "tp2_pips": 601,
-            "tp1_hit": false
-        },
-        {
             "id": "#OF_H1_1411_02H",
             "action": "SELL",
             "timeframe": "H1",
@@ -102,84 +89,6 @@
             "sl_pips": 202,
             "tp1_pips": 405,
             "tp2_pips": 608,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1411_03H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3875.68,
-            "sl": 3894.4,
-            "tp1": 3838.24,
-            "tp2": 3819.52,
-            "sl_pips": 187,
-            "tp1_pips": 374,
-            "tp2_pips": 561,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1411_03H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3875.68,
-            "sl": 3894.4,
-            "tp1": 3838.24,
-            "tp2": 3819.52,
-            "sl_pips": 187,
-            "tp1_pips": 374,
-            "tp2_pips": 561,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1411_03H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3875.68,
-            "sl": 3894.4,
-            "tp1": 3838.24,
-            "tp2": 3819.52,
-            "sl_pips": 187,
-            "tp1_pips": 374,
-            "tp2_pips": 561,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1411_06H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3874.42,
-            "sl": 3891.7,
-            "tp1": 3839.86,
-            "tp2": 3822.58,
-            "sl_pips": 172,
-            "tp1_pips": 345,
-            "tp2_pips": 518,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1411_06H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3874.42,
-            "sl": 3891.7,
-            "tp1": 3839.86,
-            "tp2": 3822.58,
-            "sl_pips": 172,
-            "tp1_pips": 345,
-            "tp2_pips": 518,
-            "tp1_hit": false
-        },
-        {
-            "id": "#OF_H1_1411_06H",
-            "action": "SELL",
-            "timeframe": "H1",
-            "entry": 3874.42,
-            "sl": 3891.7,
-            "tp1": 3839.86,
-            "tp2": 3822.58,
-            "sl_pips": 172,
-            "tp1_pips": 345,
-            "tp2_pips": 518,
             "tp1_hit": false
         }
     ],
@@ -200,6 +109,56 @@
         "#OF_H1_1211_09H",
         "#OF_H1_1211_08H"
     ],
-    "closed_trades": [],
+    "closed_trades": [
+        {
+            "id": "#OF_H1_1311_23H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -200,
+            "closed_at": "16/11 07:03"
+        },
+        {
+            "id": "#OF_H1_1411_03H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -187,
+            "closed_at": "16/11 07:03"
+        },
+        {
+            "id": "#OF_H1_1411_03H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -187,
+            "closed_at": "16/11 07:03"
+        },
+        {
+            "id": "#OF_H1_1411_03H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -187,
+            "closed_at": "16/11 07:03"
+        },
+        {
+            "id": "#OF_H1_1411_06H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -172,
+            "closed_at": "16/11 07:03"
+        },
+        {
+            "id": "#OF_H1_1411_06H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -172,
+            "closed_at": "16/11 07:03"
+        },
+        {
+            "id": "#OF_H1_1411_06H",
+            "action": "SELL",
+            "result": "C\u1eaeN SL",
+            "pips": -172,
+            "closed_at": "16/11 07:03"
+        }
+    ],
     "last_weekly_report": ""
 }

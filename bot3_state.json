@@ -147,8 +147,8 @@
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#DAY_H1_1611_23H_SL",
-        "#DAY_H1_1711_09H_SL"
+        "#DAY_H1_1711_09H_SL",
+        "#DAY_H1_1611_23H_SL"
     ],
-    "last_processed_candle": "#DAY_H1_1711_11H"
+    "last_processed_candle": "#DAY_H1_1711_12H"
 }

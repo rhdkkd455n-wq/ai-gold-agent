@@ -1,9 +1,24 @@
 {
-    "active_trades": [],
+    "active_trades": [
+        {
+            "id": "#PA_1811_01H",
+            "action": "SELL",
+            "timeframe": "H1_H4_PA",
+            "entry": 3863.37,
+            "sl": 3884.7,
+            "tp1": 3829.24,
+            "tp2": 3803.65,
+            "sl_pips": 213,
+            "tp1_pips": 341,
+            "tp2_pips": 597,
+            "tp1_hit": false,
+            "hours_held": 0
+        }
+    ],
     "calendar_sent_date": "13/11/2026",
     "closed_ids": [],
     "closed_trades": [],
     "notified_events": [],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_1811_00H"
+    "last_processed_candle": "#PA_1811_01H"
 }

@@ -1,19 +1,5 @@
 {
-    "active_trades": [
-        {
-            "id": "#DAY_H1_1711_19H",
-            "action": "BUY",
-            "timeframe": "H1_DAY",
-            "entry": 3867.66,
-            "sl": 3851.73,
-            "tp1": 3886.78,
-            "tp2": 3899.52,
-            "sl_pips": 159,
-            "tp1_pips": 191,
-            "tp2_pips": 319,
-            "tp1_hit": false
-        }
-    ],
+    "active_trades": [],
     "closed_ids": [
         "#OF_H1_1211_18H",
         "#OF_H1_1211_12H",
@@ -157,14 +143,22 @@
             "result": "C\u1eaeN SL",
             "pips": -122,
             "closed_at": "17/11 18:02"
+        },
+        {
+            "id": "#DAY_H1_1711_19H",
+            "action": "BUY",
+            "result": "C\u1eaeN SL",
+            "pips": -159,
+            "closed_at": "17/11 21:03"
         }
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#DAY_H1_1711_16H_SL",
-        "#DAY_H1_1711_11H_SL",
         "#DAY_H1_1711_09H_SL",
-        "#DAY_H1_1611_23H_SL"
+        "#DAY_H1_1711_11H_SL",
+        "#DAY_H1_1611_23H_SL",
+        "#DAY_H1_1711_16H_SL",
+        "#DAY_H1_1711_19H_SL"
     ],
-    "last_processed_candle": "#DAY_H1_1711_20H"
+    "last_processed_candle": "#DAY_H1_1711_21H"
 }

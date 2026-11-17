@@ -1,5 +1,19 @@
 {
-    "active_trades": [],
+    "active_trades": [
+        {
+            "id": "#DAY_H1_1711_09H",
+            "action": "BUY",
+            "timeframe": "H1_DAY",
+            "entry": 3865.4,
+            "sl": 3844.68,
+            "tp1": 3890.26,
+            "tp2": 3906.84,
+            "sl_pips": 207,
+            "tp1_pips": 249,
+            "tp2_pips": 414,
+            "tp1_hit": false
+        }
+    ],
     "closed_ids": [
         "#OF_H1_1211_18H",
         "#OF_H1_1211_12H",
@@ -128,5 +142,5 @@
     "notified_events": [
         "#DAY_H1_1611_23H_SL"
     ],
-    "last_processed_candle": "#DAY_H1_1711_08H"
+    "last_processed_candle": "#DAY_H1_1711_09H"
 }

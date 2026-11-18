@@ -12,7 +12,7 @@
             "tp1_pips": 354,
             "tp2_pips": 620,
             "tp1_hit": false,
-            "hours_held": 4
+            "hours_held": 5
         }
     ],
     "calendar_sent_date": "13/11/2026",
@@ -27,8 +27,8 @@
         }
     ],
     "notified_events": [
-        "#PA_1811_01H_TP1",
-        "#PA_1811_01H_TP2"
+        "#PA_1811_01H_TP2",
+        "#PA_1811_01H_TP1"
     ],
     "last_weekly_report": "",
     "last_processed_candle": "#PA_1811_17H"

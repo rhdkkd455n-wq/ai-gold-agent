@@ -19,11 +19,11 @@
         }
     ],
     "notified_events": [
+        "#PA_1811_01H_TP2",
         "#PA_1811_15H_SL",
-        "#PA_1811_01H_TP1",
-        "#PA_1811_01H_TP2"
+        "#PA_1811_01H_TP1"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_1911_03H",
+    "last_processed_candle": "#PA_1911_04H",
     "pending_setups": []
 }

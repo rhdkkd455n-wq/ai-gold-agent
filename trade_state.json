@@ -1,20 +1,5 @@
 {
-    "active_trades": [
-        {
-            "id": "#PA_1911_23H",
-            "action": "SELL",
-            "timeframe": "H1_RETEST",
-            "entry": 3698.48,
-            "sl": 3698.48,
-            "tp1": 3672.88,
-            "tp2": 3653.68,
-            "sl_pips": 160,
-            "tp1_pips": 256,
-            "tp2_pips": 448,
-            "tp1_hit": true,
-            "hours_held": 10
-        }
-    ],
+    "active_trades": [],
     "calendar_sent_date": "13/11/2026",
     "closed_ids": [],
     "closed_trades": [
@@ -45,20 +30,28 @@
             "result": "C\u1eaeN SL",
             "pips": -136,
             "closed_at": "20/11 03:02"
+        },
+        {
+            "id": "#PA_1911_23H",
+            "action": "SELL",
+            "result": "FULL TP2",
+            "pips": 448,
+            "closed_at": "20/11 05:02"
         }
     ],
     "notified_events": [
-        "#PA_1911_14H_FILLED",
-        "#PA_1911_14H_TP2",
+        "#PA_1911_23H_TP1",
+        "#PA_1911_23H_FILLED",
         "#PA_1811_01H_TP2",
         "#PA_1811_01H_TP1",
         "#PA_1811_15H_SL",
-        "#PA_2011_01H_SL",
         "#PA_1911_14H_TP1",
-        "#PA_1911_23H_FILLED",
-        "#PA_1911_23H_TP1"
+        "#PA_1911_14H_FILLED",
+        "#PA_1911_14H_TP2",
+        "#PA_2011_01H_SL",
+        "#PA_1911_23H_TP2"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_2011_04H",
+    "last_processed_candle": "#PA_2011_05H",
     "pending_setups": []
 }

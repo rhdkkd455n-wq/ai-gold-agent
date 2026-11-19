@@ -26,14 +26,14 @@
         }
     ],
     "notified_events": [
+        "#PA_1911_14H_TP1",
+        "#PA_1911_14H_TP2",
         "#PA_1811_01H_TP2",
         "#PA_1811_01H_TP1",
-        "#PA_1811_15H_SL",
         "#PA_1911_14H_FILLED",
-        "#PA_1911_14H_TP1",
-        "#PA_1911_14H_TP2"
+        "#PA_1811_15H_SL"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_1911_20H",
+    "last_processed_candle": "#PA_1911_21H",
     "pending_setups": []
 }

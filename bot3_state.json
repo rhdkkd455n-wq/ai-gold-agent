@@ -1,19 +1,5 @@
 {
-    "active_trades": [
-        {
-            "id": "#OF_H1_1911_14H",
-            "action": "SELL",
-            "timeframe": "H1_CTE",
-            "entry": 3736.34,
-            "sl": 3736.34,
-            "tp1": 3725.4,
-            "tp2": 3716.37,
-            "sl_pips": 95,
-            "tp1_pips": 109,
-            "tp2_pips": 200,
-            "tp1_hit": true
-        }
-    ],
+    "active_trades": [],
     "closed_ids": [
         "#OF_H1_1211_18H",
         "#OF_H1_1211_12H",
@@ -178,33 +164,28 @@
             "result": "C\u1eaeN SL",
             "pips": -120,
             "closed_at": "18/11 22:55"
+        },
+        {
+            "id": "#OF_H1_1911_14H",
+            "action": "SELL",
+            "result": "FULL TP2",
+            "pips": 200,
+            "closed_at": "19/11 20:02"
         }
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#DAY_H1_1711_16H_SL",
-        "#OF_H1_1911_14H_FILLED",
-        "#CTE_H1_1811_07H_SL",
-        "#DAY_H1_1711_11H_SL",
-        "#DAY_H1_1711_09H_SL",
-        "#DAY_H1_1611_23H_SL",
         "#OF_H1_1911_14H_TP1",
-        "#DAY_H1_1711_19H_SL",
-        "#CTE_H1_1811_22H_SL"
+        "#CTE_H1_1811_07H_SL",
+        "#OF_H1_1911_14H_TP2",
+        "#CTE_H1_1811_22H_SL",
+        "#DAY_H1_1611_23H_SL",
+        "#DAY_H1_1711_11H_SL",
+        "#OF_H1_1911_14H_FILLED",
+        "#DAY_H1_1711_16H_SL",
+        "#DAY_H1_1711_09H_SL",
+        "#DAY_H1_1711_19H_SL"
     ],
-    "last_processed_candle": "#OF_H1_1911_19H",
-    "pending_setups": [
-        {
-            "id": "#OF_H1_1911_19H",
-            "action": "SELL",
-            "entry": 3729.46,
-            "sl": 3739.96,
-            "tp1": 3717.38,
-            "tp2": 3707.41,
-            "sl_pips": 105,
-            "tp1_pips": 121,
-            "tp2_pips": 221,
-            "wait_hours": 0
-        }
-    ]
+    "last_processed_candle": "#OF_H1_1911_20H",
+    "pending_setups": []
 }

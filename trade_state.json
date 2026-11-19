@@ -12,7 +12,7 @@
             "tp1_pips": 256,
             "tp2_pips": 448,
             "tp1_hit": true,
-            "hours_held": 4
+            "hours_held": 5
         },
         {
             "id": "#PA_2011_01H",
@@ -26,7 +26,7 @@
             "tp1_pips": 204,
             "tp2_pips": 354,
             "tp1_hit": false,
-            "hours_held": 1
+            "hours_held": 2
         }
     ],
     "calendar_sent_date": "13/11/2026",
@@ -55,16 +55,16 @@
         }
     ],
     "notified_events": [
-        "#PA_1811_15H_SL",
-        "#PA_1911_23H_FILLED",
-        "#PA_1911_23H_TP1",
-        "#PA_1811_01H_TP2",
-        "#PA_1911_14H_TP1",
-        "#PA_1911_14H_FILLED",
         "#PA_1911_14H_TP2",
-        "#PA_1811_01H_TP1"
+        "#PA_1811_15H_SL",
+        "#PA_1911_23H_TP1",
+        "#PA_1911_23H_FILLED",
+        "#PA_1911_14H_TP1",
+        "#PA_1811_01H_TP2",
+        "#PA_1811_01H_TP1",
+        "#PA_1911_14H_FILLED"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_2011_01H",
+    "last_processed_candle": "#PA_2011_02H",
     "pending_setups": []
 }

@@ -182,15 +182,15 @@
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#CTE_H1_1811_22H_SL",
-        "#DAY_H1_1711_16H_SL",
-        "#DAY_H1_1711_11H_SL",
-        "#DAY_H1_1711_09H_SL",
-        "#OF_H1_1911_14H_FILLED",
         "#DAY_H1_1711_19H_SL",
         "#DAY_H1_1611_23H_SL",
-        "#CTE_H1_1811_07H_SL"
+        "#CTE_H1_1811_07H_SL",
+        "#OF_H1_1911_14H_FILLED",
+        "#DAY_H1_1711_09H_SL",
+        "#DAY_H1_1711_11H_SL",
+        "#DAY_H1_1711_16H_SL",
+        "#CTE_H1_1811_22H_SL"
     ],
-    "last_processed_candle": "#OF_H1_1911_16H",
+    "last_processed_candle": "#OF_H1_1911_17H",
     "pending_setups": []
 }

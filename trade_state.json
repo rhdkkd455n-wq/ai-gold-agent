@@ -12,21 +12,7 @@
             "tp1_pips": 256,
             "tp2_pips": 448,
             "tp1_hit": true,
-            "hours_held": 6
-        },
-        {
-            "id": "#PA_2011_01H",
-            "action": "BUY",
-            "timeframe": "H1_H4_PA",
-            "entry": 3680.8,
-            "sl": 3667.19,
-            "tp1": 3701.22,
-            "tp2": 3716.19,
-            "sl_pips": 136,
-            "tp1_pips": 204,
-            "tp2_pips": 354,
-            "tp1_hit": false,
-            "hours_held": 3
+            "hours_held": 7
         }
     ],
     "calendar_sent_date": "13/11/2026",
@@ -52,19 +38,27 @@
             "result": "FULL TP2",
             "pips": 206,
             "closed_at": "19/11 20:02"
+        },
+        {
+            "id": "#PA_2011_01H",
+            "action": "BUY",
+            "result": "C\u1eaeN SL",
+            "pips": -136,
+            "closed_at": "20/11 03:02"
         }
     ],
     "notified_events": [
+        "#PA_1911_14H_TP1",
         "#PA_1911_14H_FILLED",
-        "#PA_1811_15H_SL",
-        "#PA_1811_01H_TP1",
+        "#PA_2011_01H_SL",
         "#PA_1811_01H_TP2",
         "#PA_1911_23H_FILLED",
         "#PA_1911_14H_TP2",
-        "#PA_1911_14H_TP1",
-        "#PA_1911_23H_TP1"
+        "#PA_1911_23H_TP1",
+        "#PA_1811_01H_TP1",
+        "#PA_1811_15H_SL"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_2011_02H",
+    "last_processed_candle": "#PA_2011_03H",
     "pending_setups": []
 }

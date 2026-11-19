@@ -19,11 +19,25 @@
         }
     ],
     "notified_events": [
-        "#PA_1811_01H_TP2",
         "#PA_1811_15H_SL",
-        "#PA_1811_01H_TP1"
+        "#PA_1811_01H_TP1",
+        "#PA_1811_01H_TP2"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_1911_13H",
-    "pending_setups": []
+    "last_processed_candle": "#PA_1911_14H",
+    "pending_setups": [
+        {
+            "id": "#PA_1911_14H",
+            "action": "SELL",
+            "pattern": "TREND BAR GI\u1ea2M THU\u1eacN S\u00d3NG H4",
+            "entry": 3737.98,
+            "sl": 3745.35,
+            "tp1": 3726.19,
+            "tp2": 3717.34,
+            "sl_pips": 74,
+            "tp1_pips": 118,
+            "tp2_pips": 206,
+            "wait_hours": 0
+        }
+    ]
 }

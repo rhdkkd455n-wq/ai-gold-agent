@@ -5,14 +5,14 @@
             "action": "SELL",
             "timeframe": "H1_RETEST",
             "entry": 3737.98,
-            "sl": 3745.35,
+            "sl": 3737.98,
             "tp1": 3726.19,
             "tp2": 3717.34,
             "sl_pips": 74,
             "tp1_pips": 118,
             "tp2_pips": 206,
-            "tp1_hit": false,
-            "hours_held": 8
+            "tp1_hit": true,
+            "hours_held": 9
         }
     ],
     "calendar_sent_date": "13/11/2026",
@@ -36,10 +36,25 @@
     "notified_events": [
         "#PA_1811_01H_TP1",
         "#PA_1811_01H_TP2",
+        "#PA_1911_14H_FILLED",
         "#PA_1811_15H_SL",
-        "#PA_1911_14H_FILLED"
+        "#PA_1911_14H_TP1"
     ],
     "last_weekly_report": "",
-    "last_processed_candle": "#PA_1911_18H",
-    "pending_setups": []
+    "last_processed_candle": "#PA_1911_19H",
+    "pending_setups": [
+        {
+            "id": "#PA_1911_19H",
+            "action": "SELL",
+            "pattern": "BEARISH ENGULFING (Nh\u1ea5n Ch\u00ecm Gi\u1ea3m t\u1ea1i H\u1ee3p L\u01b0u)",
+            "entry": 3730.42,
+            "sl": 3739.46,
+            "tp1": 3715.96,
+            "tp2": 3705.11,
+            "sl_pips": 90,
+            "tp1_pips": 145,
+            "tp2_pips": 253,
+            "wait_hours": 0
+        }
+    ]
 }

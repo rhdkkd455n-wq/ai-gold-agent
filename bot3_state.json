@@ -168,27 +168,14 @@
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#DAY_H1_1611_23H_SL",
-        "#CTE_H1_1811_22H_SL",
+        "#CTE_H1_1811_07H_SL",
         "#DAY_H1_1711_16H_SL",
-        "#DAY_H1_1711_09H_SL",
         "#DAY_H1_1711_11H_SL",
+        "#DAY_H1_1611_23H_SL",
         "#DAY_H1_1711_19H_SL",
-        "#CTE_H1_1811_07H_SL"
+        "#CTE_H1_1811_22H_SL",
+        "#DAY_H1_1711_09H_SL"
     ],
     "last_processed_candle": "#OF_H1_1911_10H",
-    "pending_setups": [
-        {
-            "id": "#OF_H1_1911_10H",
-            "action": "SELL",
-            "entry": 3732.58,
-            "sl": 3743.08,
-            "tp1": 3718.93,
-            "tp2": 3709.48,
-            "sl_pips": 105,
-            "tp1_pips": 137,
-            "tp2_pips": 231,
-            "wait_hours": 0
-        }
-    ]
+    "pending_setups": []
 }

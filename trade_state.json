@@ -12,7 +12,7 @@
             "tp1_pips": 256,
             "tp2_pips": 448,
             "tp1_hit": true,
-            "hours_held": 1
+            "hours_held": 2
         }
     ],
     "calendar_sent_date": "13/11/2026",
@@ -41,14 +41,14 @@
         }
     ],
     "notified_events": [
-        "#PA_1911_14H_FILLED",
-        "#PA_1811_01H_TP2",
-        "#PA_1911_23H_FILLED",
-        "#PA_1811_15H_SL",
         "#PA_1911_14H_TP2",
-        "#PA_1811_01H_TP1",
+        "#PA_1911_23H_TP1",
+        "#PA_1811_01H_TP2",
+        "#PA_1811_15H_SL",
+        "#PA_1911_14H_FILLED",
+        "#PA_1911_23H_FILLED",
         "#PA_1911_14H_TP1",
-        "#PA_1911_23H_TP1"
+        "#PA_1811_01H_TP1"
     ],
     "last_weekly_report": "",
     "last_processed_candle": "#PA_2011_00H",

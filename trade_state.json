@@ -40,16 +40,16 @@
         }
     ],
     "notified_events": [
-        "#PA_1911_23H_TP2",
-        "#PA_1911_23H_FILLED",
-        "#PA_1811_01H_TP2",
-        "#PA_1811_15H_SL",
-        "#PA_1911_23H_TP1",
-        "#PA_1911_14H_TP1",
         "#PA_1911_14H_TP2",
         "#PA_1811_01H_TP1",
+        "#PA_1811_01H_TP2",
+        "#PA_1911_14H_TP1",
+        "#PA_1911_23H_TP1",
+        "#PA_1811_15H_SL",
+        "#PA_1911_23H_TP2",
+        "#PA_2011_01H_SL",
         "#PA_1911_14H_FILLED",
-        "#PA_2011_01H_SL"
+        "#PA_1911_23H_FILLED"
     ],
     "last_weekly_report": "",
     "last_processed_candle": "#PA_2111_01H",

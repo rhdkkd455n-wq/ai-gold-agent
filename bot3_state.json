@@ -189,17 +189,17 @@
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#OF_H1_1911_14H_TP2",
-        "#OF_H1_1911_14H_FILLED",
-        "#OF_H1_1911_14H_TP1",
-        "#CTE_H1_1811_07H_SL",
+        "#OF_H1_2011_16H_FILLED",
+        "#DAY_H1_1711_19H_SL",
         "#DAY_H1_1711_11H_SL",
         "#DAY_H1_1611_23H_SL",
         "#CTE_H1_1811_22H_SL",
+        "#OF_H1_1911_14H_TP2",
+        "#OF_H1_1911_14H_FILLED",
         "#DAY_H1_1711_16H_SL",
-        "#OF_H1_2011_16H_FILLED",
+        "#OF_H1_1911_14H_TP1",
         "#DAY_H1_1711_09H_SL",
-        "#DAY_H1_1711_19H_SL"
+        "#CTE_H1_1811_07H_SL"
     ],
     "last_processed_candle": "#OF_H1_2011_17H",
     "pending_setups": []

@@ -1,5 +1,5 @@
 {
-  "updated_at": "21:29 - 20/11/2026",
+  "updated_at": "00:02 - 21/11/2026",
   "bars_analyzed": 1000,
   "spread_pips": 3.0,
   "bot1": {
@@ -75,7 +75,7 @@
       "recent_trades": [
         {
           "time": "19/11 13:00",
-          "idx": 967,
+          "idx": 964,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 3730.57,
@@ -84,7 +84,7 @@
         },
         {
           "time": "17/11 07:00",
-          "idx": 913,
+          "idx": 910,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 3854.13,
@@ -93,7 +93,7 @@
         },
         {
           "time": "16/11 11:00",
-          "idx": 893,
+          "idx": 890,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 3867.09,
@@ -102,7 +102,7 @@
         },
         {
           "time": "13/11 17:00",
-          "idx": 827,
+          "idx": 824,
           "action": "SELL",
           "setup": "Engulfing",
           "entry": 3892.78,
@@ -111,7 +111,7 @@
         },
         {
           "time": "11/11 18:00",
-          "idx": 780,
+          "idx": 777,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4046.26,
@@ -120,7 +120,7 @@
         },
         {
           "time": "10/11 11:00",
-          "idx": 749,
+          "idx": 746,
           "action": "BUY",
           "setup": "Engulfing",
           "entry": 4115.75,
@@ -129,7 +129,7 @@
         },
         {
           "time": "08/11 21:00",
-          "idx": 711,
+          "idx": 708,
           "action": "BUY",
           "setup": "Engulfing",
           "entry": 4068.99,
@@ -138,7 +138,7 @@
         },
         {
           "time": "03/11 09:00",
-          "idx": 579,
+          "idx": 576,
           "action": "BUY",
           "setup": "Pin Bar (Strict)",
           "entry": 3950.6,
@@ -147,7 +147,7 @@
         },
         {
           "time": "27/10 13:00",
-          "idx": 415,
+          "idx": 412,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 4000.88,
@@ -156,7 +156,7 @@
         },
         {
           "time": "23/10 14:00",
-          "idx": 320,
+          "idx": 317,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4011.56,
@@ -165,7 +165,7 @@
         },
         {
           "time": "22/10 17:00",
-          "idx": 299,
+          "idx": 296,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4079.46,
@@ -174,7 +174,7 @@
         },
         {
           "time": "21/10 16:00",
-          "idx": 274,
+          "idx": 271,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4117.87,
@@ -183,7 +183,7 @@
         },
         {
           "time": "21/10 11:00",
-          "idx": 269,
+          "idx": 266,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4115.29,
@@ -192,7 +192,7 @@
         },
         {
           "time": "19/10 18:00",
-          "idx": 228,
+          "idx": 225,
           "action": "SELL",
           "setup": "Engulfing",
           "entry": 4163.35,
@@ -201,7 +201,7 @@
         },
         {
           "time": "19/10 11:00",
-          "idx": 221,
+          "idx": 218,
           "action": "BUY",
           "setup": "Pin Bar (Strict)",
           "entry": 4183.51,
@@ -313,7 +313,7 @@
       "recent_trades": [
         {
           "time": "20/11 01:00",
-          "idx": 979,
+          "idx": 976,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3680.07,
@@ -322,7 +322,7 @@
         },
         {
           "time": "19/11 15:00",
-          "idx": 969,
+          "idx": 966,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3736.42,
@@ -331,7 +331,7 @@
         },
         {
           "time": "19/11 11:00",
-          "idx": 965,
+          "idx": 962,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3723.52,
@@ -340,7 +340,7 @@
         },
         {
           "time": "17/11 19:00",
-          "idx": 925,
+          "idx": 922,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3860.23,
@@ -349,7 +349,7 @@
         },
         {
           "time": "17/11 15:00",
-          "idx": 921,
+          "idx": 918,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3869.44,
@@ -358,7 +358,7 @@
         },
         {
           "time": "17/11 07:00",
-          "idx": 913,
+          "idx": 910,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3854.13,
@@ -367,7 +367,7 @@
         },
         {
           "time": "16/11 16:00",
-          "idx": 898,
+          "idx": 895,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3855.51,
@@ -376,7 +376,7 @@
         },
         {
           "time": "16/11 11:00",
-          "idx": 893,
+          "idx": 890,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3867.09,
@@ -385,7 +385,7 @@
         },
         {
           "time": "15/11 22:00",
-          "idx": 880,
+          "idx": 877,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3879.69,
@@ -394,7 +394,7 @@
         },
         {
           "time": "15/11 00:00",
-          "idx": 858,
+          "idx": 855,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3874.49,
@@ -403,7 +403,7 @@
         },
         {
           "time": "14/11 00:00",
-          "idx": 834,
+          "idx": 831,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3885.76,
@@ -412,7 +412,7 @@
         },
         {
           "time": "13/11 19:00",
-          "idx": 829,
+          "idx": 826,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3888.57,
@@ -421,7 +421,7 @@
         },
         {
           "time": "13/11 14:00",
-          "idx": 824,
+          "idx": 821,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3899.77,
@@ -430,7 +430,7 @@
         },
         {
           "time": "13/11 07:00",
-          "idx": 817,
+          "idx": 814,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3886.46,
@@ -439,7 +439,7 @@
         },
         {
           "time": "11/11 17:00",
-          "idx": 779,
+          "idx": 776,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 4050.55,
@@ -583,23 +583,23 @@
       ],
       "last_weekly_report": "",
       "notified_events": [
-        "#OF_H1_1911_14H_TP2",
-        "#DAY_H1_1611_23H_SL",
-        "#DAY_H1_1711_16H_SL",
-        "#OF_H1_2011_16H_FILLED",
-        "#OF_H1_1911_14H_TP1",
-        "#DAY_H1_1711_09H_SL",
-        "#OF_H1_2011_19H_SL",
+        "#OF_H1_2011_20H_TP1",
         "#OF_H1_1911_14H_FILLED",
-        "#OF_H1_2011_20H_BE",
-        "#DAY_H1_1711_19H_SL",
+        "#OF_H1_1911_14H_TP2",
         "#OF_H1_2011_16H_SL",
-        "#CTE_H1_1811_22H_SL",
-        "#CTE_H1_1811_07H_SL",
+        "#OF_H1_1911_14H_TP1",
         "#DAY_H1_1711_11H_SL",
-        "#OF_H1_2011_20H_TP1"
+        "#CTE_H1_1811_07H_SL",
+        "#DAY_H1_1711_09H_SL",
+        "#OF_H1_2011_20H_BE",
+        "#CTE_H1_1811_22H_SL",
+        "#DAY_H1_1711_19H_SL",
+        "#DAY_H1_1611_23H_SL",
+        "#OF_H1_2011_16H_FILLED",
+        "#OF_H1_2011_19H_SL",
+        "#DAY_H1_1711_16H_SL"
       ],
-      "last_processed_candle": "#OF_H1_2011_21H",
+      "last_processed_candle": "#OF_H1_2011_23H",
       "pending_setups": [],
       "watch_zones": []
     }

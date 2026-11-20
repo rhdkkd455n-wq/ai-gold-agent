@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Agentic Gold Trading Lab</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg: #0b0f17; --card: #141b29; --border: #232f46;
+      --text: #e6edf7; --muted: #8b9bb4; --green: #10b981;
+      --red: #ef4444; --gold: #f59e0b; --blue: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 14px 12px 76px; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .title { font-size: 18px; font-weight: 700; color: var(--gold); }
+    .sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .pill { background: #1e293b; border: 1px solid var(--border); padding: 4px 10px; border-radius: 20px; font-size: 11px; color: var(--green); }
+    .bot-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+    .bot-btn { background: var(--card); border: 1px solid var(--border); color: var(--muted); padding: 10px; border-radius: 10px; font-weight: 600; font-size: 13px; cursor: pointer; }
+    .bot-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(245, 158, 11, 0.12); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+    .kpi-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+    .kpi-val { font-size: 20px; font-weight: 700; margin-top: 4px; }
+    .pos { color: var(--green); } .neg { color: var(--red); } .warn { color: var(--gold); }
+    .sec-title { font-size: 13px; font-weight: 700; margin-bottom: 10px; color: var(--text); display: flex; justify-content: space-between; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th, td { text-align: left; padding: 8px 4px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; font-size: 11px; }
+    .badge { padding: 2px 7px; border-radius: 6px; font-size: 10px; font-weight: 700; }
+    .b-keep { background: rgba(16,185,129,0.18); color: var(--green); }
+    .b-cut { background: rgba(239,68,68,0.18); color: var(--red); }
+    .b-buy { background: rgba(59,130,246,0.2); color: var(--blue); }
+    .b-sell { background: rgba(245,158,11,0.2); color: var(--gold); }
+    .tabs { position: fixed; bottom: 0; left: 0; right: 0; background: #101622; border-top: 1px solid var(--border); display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px 4px 14px; }
+    .tab { text-align: center; font-size: 11px; color: var(--muted); cursor: pointer; }
+    .tab.active { color: var(--gold); font-weight: 700; }
+    .view { display: none; } .view.active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="title">⚡ AGENTIC GOLD LAB</div>
+      <div class="sub" id="updatedAt">Đang tải dữ liệu...</div>
+    </div>
+    <div class="pill" id="candleBadge">XAU/USD H1</div>
+  </div>
+
+  <div class="bot-switch">
+    <button class="bot-btn active" onclick="selectBot('bot1', this)">Bot #1 (Price Action)</button>
+    <button class="bot-btn" onclick="selectBot('bot3', this)">Bot #3 (Order Flow)</button>
+  </div>
+
+  <!-- TAB 1: TỔNG QUAN -->
+  <div id="view-overview" class="view active">
+    <div class="grid-2">
+      <div class="card"><div class="kpi-lbl">Tổng Pips Backtest</div><div class="kpi-val" id="kpiPips">--</div></div>
+      <div class="card"><div class="kpi-lbl">Tỷ lệ thắng (Winrate)</div><div class="kpi-val" id="kpiWr">--</div></div>
+      <div class="card"><div class="kpi-lbl">Profit Factor</div><div class="kpi-val" id="kpiPf">--</div></div>
+      <div class="card"><div class="kpi-lbl">Max Drawdown</div><div class="kpi-val neg" id="kpiDd">--</div></div>
+    </div>
+    <div class="card">
+      <div class="sec-title"><span>Đường cong vốn (Equity Curve - Pips)</span><span id="totalTradesLbl" class="sub"></span></div>
+      <canvas id="equityChart" height="170"></canvas>
+    </div>
+  </div>
+
+  <!-- TAB 2: PHÒNG BACKTEST (IN-SAMPLE vs OUT-OF-SAMPLE) -->
+  <div id="view-lab" class="view">
+    <div class="card">
+      <div class="sec-title"><span>Kiểm định chống Overfitting (70% IS / 30% OOS)</span></div>
+      <table>
+        <thead><tr><th>Tập dữ liệu</th><th>Lệnh</th><th>Winrate</th><th>PF</th><th>Pips</th></tr></thead>
+        <tbody id="isOosBody"></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="sec-title"><span>15 Lệnh Backtest gần nhất (đã trừ Spread)</span></div>
+      <table>
+        <thead><tr><th>Giờ</th><th>Setup</th><th>Lệnh</th><th>KQ</th><th>Pips</th></tr></thead>
+        <tbody id="btTradesBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB 3: SỔ LỆNH LIVE -->
+  <div id="view-live" class="view">
+    <div class="card">
+      <div class="sec-title"><span>Lệnh đang mở (Live Active)</span></div>
+      <div id="liveActiveBox" class="sub">Không có lệnh đang chạy.</div>
+    </div>
+    <div class="card">
+      <div class="sec-title"><span>Lịch sử lệnh đã đóng (Live Closed)</span></div>
+      <table>
+        <thead><tr><th>Mã vé</th><th>Lệnh</th><th>Kết quả</th><th>Pips</th></tr></thead>
+        <tbody id="liveClosedBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB 4: PLAYBOOK (CHẤM ĐIỂM TỪNG MÔ HÌNH) -->
+  <div id="view-playbook" class="view">
+    <div class="card">
+      <div class="sec-title"><span>Hiệu suất từng Setup — Giữ hay Cắt bỏ?</span></div>
+      <table>
+        <thead><tr><th>Mô hình</th><th>Lệnh</th><th>WR</th><th>Pips</th><th>Đánh giá</th></tr></thead>
+        <tbody id="playbookBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('overview', this)">📊 Tổng quan</div>
+    <div class="tab" onclick="switchTab('lab', this)">🧪 Backtest</div>
+    <div class="tab" onclick="switchTab('live', this)">🔴 Sổ Live</div>
+    <div class="tab" onclick="switchTab('playbook', this)">📘 Playbook</div>
+  </div>
+
+  <script>
+    let DATA = null, CURRENT_BOT = 'bot1', CHART = null;
+
+    async function init() {
+      try {
+        const res = await fetch('dashboard_data.json?t=' + Date.now());
+        DATA = await res.json();
+        document.getElementById('updatedAt').innerText = `Cập nhật: ${DATA.updated_at} • ${DATA.candles_tested} nến H1`;
+        document.getElementById('candleBadge').innerText = `Spread: ${DATA.spread_pips} pips`;
+        render();
+      } catch (e) {
+        document.getElementById('updatedAt').innerText = 'Chưa có dữ liệu — Hãy chạy Workflow Backtest trên GitHub!';
+      }
+    }
+
+    function selectBot(botKey, btn) {
+      CURRENT_BOT = botKey;
+      document.querySelectorAll('.bot-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    }
+
+    function switchTab(tab, el) {
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('view-' + tab).classList.add('active');
+      el.classList.add('active');
+    }
+
+    function fmtPips(p) { return (p >= 0 ? '+' : '') + p; }
+
+    function render() {
+      if (!DATA) return;
+      const b = DATA[CURRENT_BOT];
+      const ov = b.backtest.overall;
+
+      const pipsEl = document.getElementById('kpiPips');
+      pipsEl.innerText = fmtPips(ov.net_pips);
+      pipsEl.className = 'kpi-val ' + (ov.net_pips >= 0 ? 'pos' : 'neg');
+
+      document.getElementById('kpiWr').innerText = ov.winrate + '%';
+      document.getElementById('kpiPf').innerText = ov.profit_factor;
+      document.getElementById('kpiDd').innerText = '-' + ov.max_dd + ' pips';
+      document.getElementById('totalTradesLbl').innerText = `${ov.total} lệnh (${ov.wins}W / ${ov.losses}L)`;
+
+      // Chart
+      const ctx = document.getElementById('equityChart').getContext('2d');
+      if (CHART) CHART.destroy();
+      const labels = b.backtest.equity_curve.map(x => x.time);
+      const vals = b.backtest.equity_curve.map(x => x.pips);
+      CHART = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            data: vals, borderColor: ov.net_pips >= 0 ? '#10b981' : '#ef4444',
+            backgroundColor: ov.net_pips >= 0 ? 'rgba(16,185,129,0.12)' : 'rgba(239,68,68,0.12)',
+            fill: true, tension: 0.25, pointRadius: 0, borderWidth: 2
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { display: false },
+            y: { grid: { color: '#1e293b' }, ticks: { color: '#8b9bb4', font: { size: 10 } } }
+          }
+        }
+      });
+
+      // IS vs OOS
+      const is = b.backtest.in_sample, oos = b.backtest.out_sample;
+      document.getElementById('isOosBody').innerHTML = `
+        <tr><td>In-Sample (70%)</td><td>${is.total}</td><td>${is.winrate}%</td><td>${is.profit_factor}</td><td class="${is.net_pips>=0?'pos':'neg'}">${fmtPips(is.net_pips)}</td></tr>
+        <tr><td>Out-of-Sample (30%)</td><td>${oos.total}</td><td>${oos.winrate}%</td><td>${oos.profit_factor}</td><td class="${oos.net_pips>=0?'pos':'neg'}">${fmtPips(oos.net_pips)}</td></tr>
+      `;
+
+      // Recent backtest trades
+      document.getElementById('btTradesBody').innerHTML = b.backtest.recent_trades.map(t => `
+        <tr>
+          <td>${t.time}</td><td>${t.setup}</td>
+          <td><span class="badge ${t.action==='BUY'?'b-buy':'b-sell'}">${t.action}</span></td>
+          <td>${t.result}</td>
+          <td class="${t.pips>=0?'pos':'neg'}">${fmtPips(t.pips)}</td>
+        </tr>
+      `).join('') || '<tr><td colspan="5">Chưa có lệnh.</td></tr>';
+
+      // Playbook
+      document.getElementById('playbookBody').innerHTML = b.backtest.playbook.map(p => `
+        <tr>
+          <td><b>${p.setup}</b></td><td>${p.trades}</td><td>${p.winrate}%</td>
+          <td class="${p.pips>=0?'pos':'neg'}">${fmtPips(p.pips)}</td>
+          <td><span class="badge ${p.verdict==='GIỮ LẠI'?'b-keep':'b-cut'}">${p.verdict}</span></td>
+        </tr>
+      `).join('');
+
+      // Live Active & Closed
+      const actBox = document.getElementById('liveActiveBox');
+      if (!b.live_active.length) {
+        actBox.innerHTML = '<div class="sub">Hiện không có lệnh mở.</div>';
+      } else {
+        actBox.innerHTML = b.live_active.map(t => `
+          <div style="padding:8px 0; border-bottom:1px solid var(--border); font-size:12px;">
+            <b>${t.id}</b> — <span class="badge ${t.action==='BUY'?'b-buy':'b-sell'}">${t.action}</span> @ <b>${t.entry}</b><br/>
+            SL: ${t.sl} | TP1: ${t.tp1} | TP2: ${t.tp2}
+          </div>
+        `).join('');
+      }
+      document.getElementById('liveClosedBody').innerHTML = b.live_closed.map(t => `
+        <tr>
+          <td>${t.id}</td>
+          <td><span class="badge ${t.action==='BUY'?'b-buy':'b-sell'}">${t.action}</span></td>
+          <td>${t.result}</td>
+          <td class="${t.pips>=0?'pos':'neg'}">${fmtPips(t.pips)}</td>
+        </tr>
+      `).join('') || '<tr><td colspan="4">Chưa có lệnh đóng tuần này.</td></tr>';
+    }
+    init();
+  </script>
+</body>
+</html>

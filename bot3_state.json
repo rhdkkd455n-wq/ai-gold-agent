@@ -196,23 +196,31 @@
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#CTE_H1_1811_22H_SL",
-        "#OF_H1_2011_16H_SL",
-        "#CTE_H1_1811_07H_SL",
-        "#OF_H1_2011_20H_BE",
-        "#OF_H1_1911_14H_TP2",
+        "#DAY_H1_1611_23H_SL",
+        "#OF_H1_2011_16H_FILLED",
         "#OF_H1_2011_20H_TP1",
+        "#OF_H1_2011_19H_SL",
+        "#DAY_H1_1711_16H_SL",
         "#DAY_H1_1711_09H_SL",
         "#DAY_H1_1711_19H_SL",
-        "#OF_H1_2011_19H_SL",
-        "#OF_H1_2011_16H_FILLED",
         "#DAY_H1_1711_11H_SL",
-        "#DAY_H1_1611_23H_SL",
-        "#DAY_H1_1711_16H_SL",
+        "#OF_H1_2011_20H_BE",
         "#OF_H1_1911_14H_TP1",
-        "#OF_H1_1911_14H_FILLED"
+        "#OF_H1_2011_16H_SL",
+        "#OF_H1_1911_14H_FILLED",
+        "#OF_H1_1911_14H_TP2",
+        "#CTE_H1_1811_22H_SL",
+        "#CTE_H1_1811_07H_SL"
     ],
-    "last_processed_candle": "#OF_H1_2011_22H",
+    "last_processed_candle": "#OF_H1_2011_23H",
     "pending_setups": [],
-    "watch_zones": []
+    "watch_zones": [
+        {
+            "id": "#OF_H1_2011_23H",
+            "action": "SELL",
+            "zone_price": 3558.89,
+            "sl": 3571.89,
+            "wait_hours": 0
+        }
+    ]
 }

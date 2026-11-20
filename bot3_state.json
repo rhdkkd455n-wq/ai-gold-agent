@@ -1,5 +1,19 @@
 {
-    "active_trades": [],
+    "active_trades": [
+        {
+            "id": "#OF_H1_2011_16H",
+            "action": "SELL",
+            "timeframe": "H1_CTE",
+            "entry": 3580.02,
+            "sl": 3593.02,
+            "tp1": 3565.07,
+            "tp2": 3552.72,
+            "sl_pips": 130,
+            "tp1_pips": 149,
+            "tp2_pips": 273,
+            "tp1_hit": false
+        }
+    ],
     "closed_ids": [
         "#OF_H1_1211_18H",
         "#OF_H1_1211_12H",
@@ -175,30 +189,18 @@
     ],
     "last_weekly_report": "",
     "notified_events": [
-        "#DAY_H1_1711_19H_SL",
-        "#DAY_H1_1711_11H_SL",
-        "#CTE_H1_1811_07H_SL",
+        "#OF_H1_2011_16H_FILLED",
+        "#DAY_H1_1711_16H_SL",
+        "#OF_H1_1911_14H_FILLED",
         "#OF_H1_1911_14H_TP1",
         "#OF_H1_1911_14H_TP2",
-        "#DAY_H1_1611_23H_SL",
+        "#CTE_H1_1811_07H_SL",
+        "#DAY_H1_1711_11H_SL",
         "#CTE_H1_1811_22H_SL",
-        "#DAY_H1_1711_16H_SL",
         "#DAY_H1_1711_09H_SL",
-        "#OF_H1_1911_14H_FILLED"
+        "#DAY_H1_1611_23H_SL",
+        "#DAY_H1_1711_19H_SL"
     ],
     "last_processed_candle": "#OF_H1_2011_16H",
-    "pending_setups": [
-        {
-            "id": "#OF_H1_2011_16H",
-            "action": "SELL",
-            "entry": 3580.02,
-            "sl": 3593.02,
-            "tp1": 3565.07,
-            "tp2": 3552.72,
-            "sl_pips": 130,
-            "tp1_pips": 149,
-            "tp2_pips": 273,
-            "wait_hours": 0
-        }
-    ]
+    "pending_setups": []
 }

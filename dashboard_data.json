@@ -1,5 +1,5 @@
 {
-  "updated_at": "03:55 - 21/11/2026",
+  "updated_at": "08:14 - 21/11/2026",
   "bars_analyzed": 1000,
   "spread_pips": 3.0,
   "bot1": {
@@ -75,7 +75,7 @@
       "recent_trades": [
         {
           "time": "19/11 13:00",
-          "idx": 961,
+          "idx": 956,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 3730.57,
@@ -84,7 +84,7 @@
         },
         {
           "time": "17/11 07:00",
-          "idx": 907,
+          "idx": 902,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 3854.13,
@@ -93,7 +93,7 @@
         },
         {
           "time": "16/11 11:00",
-          "idx": 887,
+          "idx": 882,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 3867.09,
@@ -102,7 +102,7 @@
         },
         {
           "time": "13/11 17:00",
-          "idx": 821,
+          "idx": 816,
           "action": "SELL",
           "setup": "Engulfing",
           "entry": 3892.78,
@@ -111,7 +111,7 @@
         },
         {
           "time": "11/11 18:00",
-          "idx": 774,
+          "idx": 769,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4046.26,
@@ -120,7 +120,7 @@
         },
         {
           "time": "10/11 11:00",
-          "idx": 743,
+          "idx": 738,
           "action": "BUY",
           "setup": "Engulfing",
           "entry": 4115.75,
@@ -129,7 +129,7 @@
         },
         {
           "time": "08/11 21:00",
-          "idx": 705,
+          "idx": 700,
           "action": "BUY",
           "setup": "Engulfing",
           "entry": 4068.99,
@@ -138,7 +138,7 @@
         },
         {
           "time": "03/11 09:00",
-          "idx": 573,
+          "idx": 568,
           "action": "BUY",
           "setup": "Pin Bar (Strict)",
           "entry": 3950.6,
@@ -147,7 +147,7 @@
         },
         {
           "time": "27/10 13:00",
-          "idx": 409,
+          "idx": 404,
           "action": "SELL",
           "setup": "Trend Bar",
           "entry": 4000.88,
@@ -156,7 +156,7 @@
         },
         {
           "time": "23/10 14:00",
-          "idx": 314,
+          "idx": 309,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4011.56,
@@ -165,7 +165,7 @@
         },
         {
           "time": "22/10 17:00",
-          "idx": 293,
+          "idx": 288,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4079.46,
@@ -174,7 +174,7 @@
         },
         {
           "time": "21/10 16:00",
-          "idx": 268,
+          "idx": 263,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4117.87,
@@ -183,7 +183,7 @@
         },
         {
           "time": "21/10 11:00",
-          "idx": 263,
+          "idx": 258,
           "action": "SELL",
           "setup": "Pin Bar (Strict)",
           "entry": 4115.29,
@@ -192,7 +192,7 @@
         },
         {
           "time": "19/10 18:00",
-          "idx": 222,
+          "idx": 217,
           "action": "SELL",
           "setup": "Engulfing",
           "entry": 4163.35,
@@ -201,7 +201,7 @@
         },
         {
           "time": "19/10 11:00",
-          "idx": 215,
+          "idx": 210,
           "action": "BUY",
           "setup": "Pin Bar (Strict)",
           "entry": 4183.51,
@@ -218,81 +218,80 @@
   "bot3": {
     "name": "Bot #3 (Order Flow + VP)",
     "backtest": {
-      "total_trades": 59,
-      "wins": 30,
+      "total_trades": 58,
+      "wins": 29,
       "losses": 29,
-      "winrate": 50.8,
-      "total_pips": 507.4,
-      "profit_factor": 1.2,
+      "winrate": 50.0,
+      "total_pips": 461.5,
+      "profit_factor": 1.18,
       "max_dd": -704.9,
       "equity_curve": [
         0.0,
-        45.9,
-        199.5,
-        109.0,
-        263.5,
-        164.7,
+        153.6,
+        63.1,
+        217.6,
+        118.8,
+        253.9,
         299.8,
-        345.7,
-        355.5,
-        569.1,
-        625.1,
-        760.2,
+        309.6,
+        523.2,
+        579.2,
+        714.3,
+        626.3,
         672.2,
-        718.1,
-        609.6,
-        521.6,
-        582.0,
-        727.8,
-        788.1,
-        691.2,
-        844.8,
-        908.2,
-        905.0,
+        563.7,
+        475.7,
+        536.1,
+        681.9,
+        742.2,
+        645.3,
+        798.9,
+        862.3,
+        859.1,
+        768.9,
         814.8,
-        860.7,
+        681.7,
         727.6,
-        773.5,
+        639.6,
         685.5,
-        731.4,
-        625.9,
-        691.9,
-        689.7,
-        601.7,
-        513.7,
-        397.9,
-        303.0,
-        481.2,
-        360.4,
-        227.8,
-        224.5,
-        385.4,
-        520.5,
-        432.5,
-        317.9,
-        229.9,
-        417.2,
+        580.0,
+        646.0,
+        643.8,
+        555.8,
+        467.8,
+        352.0,
+        257.1,
+        435.3,
+        314.5,
+        181.9,
+        178.6,
+        339.5,
+        474.6,
+        386.6,
+        272.0,
+        184.0,
+        371.3,
+        283.3,
         329.2,
-        375.1,
-        251.0,
-        355.4,
-        352.1,
-        264.1,
-        463.1,
-        334.4,
-        203.3,
-        271.1,
-        345.6,
+        205.1,
+        309.5,
+        306.2,
+        218.2,
+        417.2,
+        288.5,
+        157.4,
+        225.2,
+        299.7,
+        211.7,
         257.6,
-        303.5,
-        507.4
+        461.5
       ],
       "is_oos": {
         "in_sample": {
-          "trades": 39,
-          "winrate": 51.3,
-          "pf": 1.14,
-          "pips": 224.5
+          "trades": 38,
+          "winrate": 50.0,
+          "pf": 1.11,
+          "pips": 178.6
         },
         "out_of_sample": {
           "trades": 20,
@@ -304,16 +303,16 @@
       "by_setup": [
         {
           "setup": "Trend Pullback CVD",
-          "trades": 59,
-          "winrate": 50.8,
-          "pips": 507.4,
+          "trades": 58,
+          "winrate": 50.0,
+          "pips": 461.5,
           "verdict": "GIỮ LẠI"
         }
       ],
       "recent_trades": [
         {
           "time": "20/11 01:00",
-          "idx": 973,
+          "idx": 968,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3680.07,
@@ -322,7 +321,7 @@
         },
         {
           "time": "19/11 15:00",
-          "idx": 963,
+          "idx": 958,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3736.42,
@@ -331,7 +330,7 @@
         },
         {
           "time": "19/11 11:00",
-          "idx": 959,
+          "idx": 954,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3723.52,
@@ -340,7 +339,7 @@
         },
         {
           "time": "17/11 19:00",
-          "idx": 919,
+          "idx": 914,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3860.23,
@@ -349,7 +348,7 @@
         },
         {
           "time": "17/11 15:00",
-          "idx": 915,
+          "idx": 910,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3869.44,
@@ -358,7 +357,7 @@
         },
         {
           "time": "17/11 07:00",
-          "idx": 907,
+          "idx": 902,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3854.13,
@@ -367,7 +366,7 @@
         },
         {
           "time": "16/11 16:00",
-          "idx": 892,
+          "idx": 887,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3855.51,
@@ -376,7 +375,7 @@
         },
         {
           "time": "16/11 11:00",
-          "idx": 887,
+          "idx": 882,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3867.09,
@@ -385,7 +384,7 @@
         },
         {
           "time": "15/11 22:00",
-          "idx": 874,
+          "idx": 869,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3879.69,
@@ -394,7 +393,7 @@
         },
         {
           "time": "15/11 00:00",
-          "idx": 852,
+          "idx": 847,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3874.49,
@@ -403,7 +402,7 @@
         },
         {
           "time": "14/11 00:00",
-          "idx": 828,
+          "idx": 823,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3885.76,
@@ -412,7 +411,7 @@
         },
         {
           "time": "13/11 19:00",
-          "idx": 823,
+          "idx": 818,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3888.57,
@@ -421,7 +420,7 @@
         },
         {
           "time": "13/11 14:00",
-          "idx": 818,
+          "idx": 813,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3899.77,
@@ -430,7 +429,7 @@
         },
         {
           "time": "13/11 07:00",
-          "idx": 811,
+          "idx": 806,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 3886.46,
@@ -439,7 +438,7 @@
         },
         {
           "time": "11/11 17:00",
-          "idx": 773,
+          "idx": 768,
           "action": "SELL",
           "setup": "Trend Pullback CVD",
           "entry": 4050.55,
@@ -467,139 +466,26 @@
         "#OF_H1_1211_09H",
         "#OF_H1_1211_08H"
       ],
-      "closed_trades": [
-        {
-          "id": "#OF_H1_1311_23H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -200,
-          "closed_at": "16/11 07:03"
-        },
-        {
-          "id": "#OF_H1_1411_03H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -187,
-          "closed_at": "16/11 07:03"
-        },
-        {
-          "id": "#OF_H1_1411_06H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -172,
-          "closed_at": "16/11 07:03"
-        },
-        {
-          "id": "#OF_H1_1311_20H",
-          "action": "SELL",
-          "result": "FULL TP2",
-          "pips": 536,
-          "closed_at": "16/11 13:02"
-        },
-        {
-          "id": "#OF_H1_1411_02H",
-          "action": "SELL",
-          "result": "TP1 + BE",
-          "pips": 405,
-          "closed_at": "16/11 22:01"
-        },
-        {
-          "id": "#DAY_H1_1611_23H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -259,
-          "closed_at": "16/11 23:42"
-        },
-        {
-          "id": "#DAY_H1_1711_09H",
-          "action": "BUY",
-          "result": "CẮN SL",
-          "pips": -207,
-          "closed_at": "17/11 09:07"
-        },
-        {
-          "id": "#DAY_H1_1711_11H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -147,
-          "closed_at": "17/11 13:03"
-        },
-        {
-          "id": "#DAY_H1_1711_16H",
-          "action": "BUY",
-          "result": "CẮN SL",
-          "pips": -122,
-          "closed_at": "17/11 18:02"
-        },
-        {
-          "id": "#DAY_H1_1711_19H",
-          "action": "BUY",
-          "result": "CẮN SL",
-          "pips": -159,
-          "closed_at": "17/11 21:03"
-        },
-        {
-          "id": "#CTE_H1_1811_07H",
-          "action": "BUY",
-          "result": "CẮN SL",
-          "pips": -115,
-          "closed_at": "18/11 08:02"
-        },
-        {
-          "id": "#CTE_H1_1811_22H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -120,
-          "closed_at": "18/11 22:55"
-        },
-        {
-          "id": "#OF_H1_1911_14H",
-          "action": "SELL",
-          "result": "FULL TP2",
-          "pips": 200,
-          "closed_at": "19/11 20:02"
-        },
-        {
-          "id": "#OF_H1_2011_16H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -130,
-          "closed_at": "20/11 18:02"
-        },
-        {
-          "id": "#OF_H1_2011_19H",
-          "action": "SELL",
-          "result": "CẮN SL",
-          "pips": -135,
-          "closed_at": "20/11 20:00"
-        },
-        {
-          "id": "#OF_H1_2011_20H",
-          "action": "SELL",
-          "result": "TP1 + BE",
-          "pips": 155,
-          "closed_at": "20/11 21:18"
-        }
-      ],
-      "last_weekly_report": "",
+      "closed_trades": [],
+      "last_weekly_report": "2026-W47",
       "notified_events": [
         "#CTE_H1_1811_07H_SL",
-        "#OF_H1_2011_20H_TP1",
-        "#OF_H1_2011_19H_SL",
-        "#DAY_H1_1611_23H_SL",
-        "#DAY_H1_1711_09H_SL",
-        "#OF_H1_1911_14H_FILLED",
-        "#OF_H1_1911_14H_TP2",
-        "#OF_H1_2011_16H_SL",
-        "#DAY_H1_1711_16H_SL",
-        "#CTE_H1_1811_22H_SL",
-        "#OF_H1_2011_20H_BE",
         "#DAY_H1_1711_19H_SL",
+        "#OF_H1_2011_19H_SL",
+        "#OF_H1_2011_16H_SL",
+        "#OF_H1_1911_14H_FILLED",
+        "#OF_H1_1911_14H_TP1",
+        "#OF_H1_2011_20H_BE",
+        "#DAY_H1_1711_16H_SL",
+        "#DAY_H1_1711_09H_SL",
+        "#OF_H1_1911_14H_TP2",
         "#OF_H1_2011_16H_FILLED",
+        "#CTE_H1_1811_22H_SL",
+        "#OF_H1_2011_20H_TP1",
         "#DAY_H1_1711_11H_SL",
-        "#OF_H1_1911_14H_TP1"
+        "#DAY_H1_1611_23H_SL"
       ],
-      "last_processed_candle": "#OF_H1_2111_03H",
+      "last_processed_candle": "#OF_H1_2111_06H",
       "pending_setups": [],
       "watch_zones": []
     }
